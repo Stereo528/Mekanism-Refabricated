@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "mekanism",
+  "version": "${version}",
+  "name": "Mekanism_refabricated",
+  "description": "Mekanism, but Fabric",
+  "authors": [
+    "Stereo528"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/mekanism/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "io.github.stereo528.mekanism_refabricated.Mekanism_refabricated"
+    ]
+  },
+  "mixins": [
+    "mekanism_refabricated.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.16.5"
+  }
+}
