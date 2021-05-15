@@ -1,6 +1,6 @@
 {
-    "parent": "mekanism:item/standard_item",
-    "textures": { 
-        "layer0": "mekanism:item/clump_gold"
-    }
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "mekanism:item/clump_gold"
+  }
 }

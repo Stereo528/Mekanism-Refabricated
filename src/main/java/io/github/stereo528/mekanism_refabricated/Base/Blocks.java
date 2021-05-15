@@ -2,9 +2,12 @@ package io.github.stereo528.mekanism_refabricated.Base;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.Block;
+import net.minecraft.item.BlockItem;
+import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
+import static io.github.stereo528.mekanism_refabricated.Mekanism_refabricated.MEKANISM_BLOCKS;
 import static io.github.stereo528.mekanism_refabricated.Mekanism_refabricated.MOD_ID;
 import static net.minecraft.block.Blocks.IRON_BLOCK;
 
@@ -26,6 +29,7 @@ public class Blocks {
     }
 
     private static Block register(String name, Block block) {
+        Registry.register(Registry.ITEM, new Identifier(MOD_ID, name), new BlockItem(block, new Item.Settings().group(MEKANISM_BLOCKS)));
         return Registry.register(Registry.BLOCK, new Identifier(MOD_ID, name), block);
     }
 

@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "mekanism:fluid/fluid"
+      "model": "mekanism:block/hydrofluoric_acid"
     }
   }
 }
